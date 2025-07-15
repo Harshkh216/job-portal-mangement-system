@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Apply Job</title></head>
+<body class="container">
+    <h2>Apply for {{ job.title }} at {{ job.company }}</h2>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Your Name" class="form-control mb-2" required>
+        <input type="email" name="email" placeholder="Your Email" class="form-control mb-2" required>
+        <button type="submit" class="btn btn-success">Submit Application</button>
+    </form>
+</body>
+</html>

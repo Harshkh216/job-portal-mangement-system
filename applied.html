@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Applied Jobs</title></head>
+<body class="container">
+    <h2>Applied Jobs</h2>
+    <ul class="list-group">
+        {% for app in apps %}
+        <li class="list-group-item">
+            {{ app.name }} applied for <strong>{{ app.title }}</strong> at {{ app.company }}
+            <a href="/delete/{{ app.id }}" class="btn btn-sm btn-danger float-end">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
